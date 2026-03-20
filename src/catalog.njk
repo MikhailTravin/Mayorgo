@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Каталог</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="breadcrumbs breadcrumbs2">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="./">
+                                Главная
+                            </a>
+                        </li>
+                        <li><span>Новинки</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block-catalog">
+                <div class="container">
+                    <div class="block-catalog__content">
+                        <div class="block-catalog__top">
+                            <h2 class="title2 tt">Новинки</h2>
+                            <div class="block-catalog__filter-icon">
+                                <img src="img/icons/filter.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="filters">
+                            <div class="filters__top">
+                                <div class="filters__title">Фильтр</div>
+                                <div class="filters__close">
+                                    <img src="img/icons/close.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="filters__body">
+                                <div class="filters__column">
+                                    <select name="size[]" multiple data-placeholder="Размер одежды">
+                                        <option value="1">Onesize</option>
+                                        <option value="2">XS</option>
+                                        <option value="3">S</option>
+                                        <option value="4">M</option>
+                                        <option value="5">L</option>
+                                        <option value="6">XL</option>
+                                        <option value="7">2XL</option>
+                                        <option value="8">3XL</option>
+                                        <option value="9">36</option>
+                                        <option value="10">38</option>
+                                        <option value="11">40</option>
+                                        <option value="12">42</option>
+                                        <option value="13">44</option>
+                                    </select>
+                                    <select name="colors[]" multiple data-placeholder="Цвет">
+                                        <option value="1">Черный</option>
+                                        <option value="2">Коричневый</option>
+                                        <option value="3">Бежевый</option>
+                                        <option value="4">Красный</option>
+                                        <option value="5">Голубой</option>
+                                        <option value="6">Белый</option>
+                                        <option value="7">Красный</option>
+                                        <option value="8">Синий</option>
+                                        <option value="9">Оранжевый</option>
+                                        <option value="10">Черный</option>
+                                        <option value="11">Фиолетовый</option>
+                                        <option value="12">Серый</option>
+                                        <option value="13">Антрацит</option>
+                                        <option value="14">Фиолетовый</option>
+                                        <option value="15">Серый</option>
+                                        <option value="16">Антрацит</option>
+                                    </select>
+                                    <select name="category[]" multiple data-placeholder="Категория">
+                                        <option value="1" class="red">РАСПРОДАЖА</option>
+                                        <option value="2">ХИТЫ</option>
+                                        <option value="3">НОВИНКИ</option>
+                                        <option value="4">БОЛЬШИЕ РАЗМЕРЫ</option>
+                                        <option value="5">Брюки</option>
+                                        <option value="6">Аксессуары</option>
+                                        <option value="7">Блузы и рубашки</option>
+                                        <option value="8">Верхняя одежда</option>
+                                        <option value="9">Комбинезоны</option>
+                                        <option value="10">Костюмы</option>
+                                        <option value="11">Обувь</option>
+                                        <option value="12">Пиджаки и жакеты</option>
+                                        <option value="13">Платья и сарафаны</option>
+                                        <option value="14">Платья и сарафаны</option>
+                                        <option value="15">Платья и сарафаны</option>
+                                        <option value="16">Платья и сарафаны</option>
+                                    </select>
+                                </div>
+                                <div class="filters__column filter-sorting">
+                                    <select name="form[]" class="select4">
+                                        <option value="1" selected>По умолчанию</option>
+                                        <option value="2">По возрастанию цены</option>
+                                        <option value="3">По убыванию цены</option>
+                                        <option value="4">По популярности</option>
+                                        <option value="5">По новизне</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-catalog__cards">
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <div class="favorites active">
+                                        <img loading="lazy" src="img/icons/heart2.svg" alt="" class="favorites__icon1">
+                                        <img loading="lazy" src="img/icons/heart3.svg" alt="" class="favorites__icon2">
+                                    </div>
+                                    <a href="./" class="product-card__image-mob">
+                                        <img loading="lazy" src="img/image7.webp" alt="">
+                                    </a>
+                                    <a href="./" class="product-card__tabs">
+                                        <div class="product-card__photos">
+                                            <div class="product-card__photo active">
+                                                <img loading="lazy" src="img/image7.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                            <div class="product-card__photo">
+                                                <img loading="lazy" src="img/image8.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
+                                        Футболка из хлопка
+                                    </a>
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            <span>2 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-card__old-price">
+                                            <span>6 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__info">
+                                    <div class="product-card-detail">
+                                        <div class="product-card-detail__slider swiper">
+                                            <div class="product-card-detail__wrapper swiper-wrapper">
+                                                <div data-image="img/image7.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image7.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image8.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image8.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image9.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image9.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-detail__arrow-next arrow-next">
+                                            <svg aria-hidden="true" width="8" height="20">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>36</li>
+                                        <li>38</li>
+                                        <li>40</li>
+                                        <li>42</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <div class="favorites active">
+                                        <img loading="lazy" src="img/icons/heart2.svg" alt="" class="favorites__icon1">
+                                        <img loading="lazy" src="img/icons/heart3.svg" alt="" class="favorites__icon2">
+                                    </div>
+                                    <a href="./" class="product-card__image-mob">
+                                        <img loading="lazy" src="img/image7.webp" alt="">
+                                    </a>
+                                    <a href="./" class="product-card__tabs">
+                                        <div class="product-card__photos">
+                                            <div class="product-card__photo active">
+                                                <img loading="lazy" src="img/image7.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                            <div class="product-card__photo">
+                                                <img loading="lazy" src="img/image8.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
+                                        Футболка из хлопка
+                                    </a>
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            <span>2 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-card__old-price">
+                                            <span>6 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__info">
+                                    <div class="product-card-detail">
+                                        <div class="product-card-detail__slider swiper">
+                                            <div class="product-card-detail__wrapper swiper-wrapper">
+                                                <div data-image="img/image7.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image7.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image8.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image8.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image9.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image9.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-detail__arrow-next arrow-next">
+                                            <svg aria-hidden="true" width="8" height="20">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>36</li>
+                                        <li>38</li>
+                                        <li>40</li>
+                                        <li>42</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <div class="favorites active">
+                                        <img loading="lazy" src="img/icons/heart2.svg" alt="" class="favorites__icon1">
+                                        <img loading="lazy" src="img/icons/heart3.svg" alt="" class="favorites__icon2">
+                                    </div>
+                                    <a href="./" class="product-card__image-mob">
+                                        <img loading="lazy" src="img/image7.webp" alt="">
+                                    </a>
+                                    <a href="./" class="product-card__tabs">
+                                        <div class="product-card__photos">
+                                            <div class="product-card__photo active">
+                                                <img loading="lazy" src="img/image7.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                            <div class="product-card__photo">
+                                                <img loading="lazy" src="img/image8.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
+                                        Футболка из хлопка
+                                    </a>
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            <span>2 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-card__old-price">
+                                            <span>6 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__info">
+                                    <div class="product-card-detail">
+                                        <div class="product-card-detail__slider swiper">
+                                            <div class="product-card-detail__wrapper swiper-wrapper">
+                                                <div data-image="img/image7.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image7.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image8.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image8.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image9.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image9.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-detail__arrow-next arrow-next">
+                                            <svg aria-hidden="true" width="8" height="20">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>36</li>
+                                        <li>38</li>
+                                        <li>40</li>
+                                        <li>42</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <div class="favorites active">
+                                        <img loading="lazy" src="img/icons/heart2.svg" alt="" class="favorites__icon1">
+                                        <img loading="lazy" src="img/icons/heart3.svg" alt="" class="favorites__icon2">
+                                    </div>
+                                    <a href="./" class="product-card__image-mob">
+                                        <img loading="lazy" src="img/image7.webp" alt="">
+                                    </a>
+                                    <a href="./" class="product-card__tabs">
+                                        <div class="product-card__photos">
+                                            <div class="product-card__photo active">
+                                                <img loading="lazy" src="img/image7.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                            <div class="product-card__photo">
+                                                <img loading="lazy" src="img/image8.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
+                                        Футболка из хлопка
+                                    </a>
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            <span>2 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-card__old-price">
+                                            <span>6 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__info">
+                                    <div class="product-card-detail">
+                                        <div class="product-card-detail__slider swiper">
+                                            <div class="product-card-detail__wrapper swiper-wrapper">
+                                                <div data-image="img/image7.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image7.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image8.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image8.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image9.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image9.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-detail__arrow-next arrow-next">
+                                            <svg aria-hidden="true" width="8" height="20">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>36</li>
+                                        <li>38</li>
+                                        <li>40</li>
+                                        <li>42</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <div class="favorites active">
+                                        <img loading="lazy" src="img/icons/heart2.svg" alt="" class="favorites__icon1">
+                                        <img loading="lazy" src="img/icons/heart3.svg" alt="" class="favorites__icon2">
+                                    </div>
+                                    <a href="./" class="product-card__image-mob">
+                                        <img loading="lazy" src="img/image7.webp" alt="">
+                                    </a>
+                                    <a href="./" class="product-card__tabs">
+                                        <div class="product-card__photos">
+                                            <div class="product-card__photo active">
+                                                <img loading="lazy" src="img/image7.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                            <div class="product-card__photo">
+                                                <img loading="lazy" src="img/image8.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
+                                        Футболка из хлопка
+                                    </a>
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            <span>2 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-card__old-price">
+                                            <span>6 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__info">
+                                    <div class="product-card-detail">
+                                        <div class="product-card-detail__slider swiper">
+                                            <div class="product-card-detail__wrapper swiper-wrapper">
+                                                <div data-image="img/image7.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image7.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image8.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image8.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image9.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image9.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-detail__arrow-next arrow-next">
+                                            <svg aria-hidden="true" width="8" height="20">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>36</li>
+                                        <li>38</li>
+                                        <li>40</li>
+                                        <li>42</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__image">
+                                    <div class="favorites active">
+                                        <img loading="lazy" src="img/icons/heart2.svg" alt="" class="favorites__icon1">
+                                        <img loading="lazy" src="img/icons/heart3.svg" alt="" class="favorites__icon2">
+                                    </div>
+                                    <a href="./" class="product-card__image-mob">
+                                        <img loading="lazy" src="img/image7.webp" alt="">
+                                    </a>
+                                    <a href="./" class="product-card__tabs">
+                                        <div class="product-card__photos">
+                                            <div class="product-card__photo active">
+                                                <img loading="lazy" src="img/image7.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                            <div class="product-card__photo">
+                                                <img loading="lazy" src="img/image8.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
+                                        Футболка из хлопка
+                                    </a>
+                                    <div class="product-card__prices">
+                                        <div class="product-card__price">
+                                            <span>2 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="product-card__old-price">
+                                            <span>6 900</span>
+                                            <svg aria-hidden="true" width="10" height="13">
+                                                <use xlink:href="img/sprite.svg#ruble"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card__info">
+                                    <div class="product-card-detail">
+                                        <div class="product-card-detail__slider swiper">
+                                            <div class="product-card-detail__wrapper swiper-wrapper">
+                                                <div data-image="img/image7.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image7.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image8.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image8.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image9.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image9.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                                <div data-image="img/image10.webp"
+                                                    class="product-card-detail__slide swiper-slide">
+                                                    <img loading="lazy" src="img/image10.webp" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-detail__arrow-next arrow-next">
+                                            <svg aria-hidden="true" width="8" height="20">
+                                                <use xlink:href="img/sprite.svg#arrow1"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>36</li>
+                                        <li>38</li>
+                                        <li>40</li>
+                                        <li>42</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/cookies.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

@@ -11,6 +11,34 @@
         {% include 'blocks/header.njk' %}
         <main class="main">
 
+            <div class="block-bannner block-bannner1">
+                <div class="block-bannner__slider swiper">
+                    <div class="block-bannner__wrapper swiper-wrapper">
+                        <a href="./" class="block-bannner__slide swiper-slide">
+                            <img src="img/image1.webp" alt="" class="desc">
+                            <img src="img/image1-mob.webp" alt="" class="mob">
+                        </a>
+                        <a href="./" class="block-bannner__slide swiper-slide">
+                            <img src="img/image15.webp" alt="" class="desc">
+                            <img src="img/image15-mob.webp" alt="" class="mob">
+                        </a>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <div class="block-bannner__arrow-prev arrow-prev">
+                        <svg aria-hidden="true" width="14" height="26">
+                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                        </svg>
+                    </div>
+                    <div class="block-bannner__arrow-next arrow-next">
+                        <svg aria-hidden="true" width="14" height="26">
+                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="block-bannner__pagination pagination"></div>
+            </div>
+
             <div class="block-products block-products1">
                 <div class="block-products__slider swiper">
                     <div class="block-products__wrapper swiper-wrapper">
@@ -110,14 +138,26 @@
                                         <img loading="lazy" src="img/icons/heart2.svg" alt="" class="favorites__icon1">
                                         <img loading="lazy" src="img/icons/heart3.svg" alt="" class="favorites__icon2">
                                     </div>
-                                    <a href="./">
+                                    <a href="./" class="product-card__image-mob">
                                         <img loading="lazy" src="img/image7.webp" alt="">
                                     </a>
+                                    <a href="./" class="product-card__tabs">
+                                        <div class="product-card__photos">
+                                            <div class="product-card__photo active">
+                                                <img loading="lazy" src="img/image7.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                            <div class="product-card__photo">
+                                                <img loading="lazy" src="img/image8.webp" alt="">
+                                                <div class="product-card__photo-nav"></div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>6 900</span>
@@ -126,7 +166,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -140,10 +180,10 @@
                                         <img loading="lazy" src="img/image8.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>13 800</span>
@@ -152,7 +192,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -166,10 +206,10 @@
                                         <img loading="lazy" src="img/image9.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>6 900</span>
@@ -178,7 +218,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -192,10 +232,10 @@
                                         <img loading="lazy" src="img/image10.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>13 800</span>
@@ -204,7 +244,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -218,10 +258,10 @@
                                         <img loading="lazy" src="img/image7.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>6 900</span>
@@ -230,7 +270,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -244,10 +284,10 @@
                                         <img loading="lazy" src="img/image8.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>13 800</span>
@@ -256,7 +296,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -270,10 +310,10 @@
                                         <img loading="lazy" src="img/image9.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>6 900</span>
@@ -282,7 +322,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -296,10 +336,10 @@
                                         <img loading="lazy" src="img/image10.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>13 800</span>
@@ -308,7 +348,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -451,6 +491,34 @@
                 </div>
             </div>
 
+            <div class="block-bannner">
+                <div class="block-bannner__slider swiper">
+                    <div class="block-bannner__wrapper swiper-wrapper">
+                        <a href="./" class="block-bannner__slide swiper-slide">
+                            <img src="img/image15.webp" alt="" class="desc">
+                            <img src="img/image15-mob.webp" alt="" class="mob">
+                        </a>
+                        <a href="./" class="block-bannner__slide swiper-slide">
+                            <img src="img/image1.webp" alt="" class="desc">
+                            <img src="img/image1-mob.webp" alt="" class="mob">
+                        </a>
+                    </div>
+                </div>
+                <div class="arrows">
+                    <div class="block-bannner__arrow-prev arrow-prev">
+                        <svg aria-hidden="true" width="14" height="26">
+                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                        </svg>
+                    </div>
+                    <div class="block-bannner__arrow-next arrow-next">
+                        <svg aria-hidden="true" width="14" height="26">
+                            <use xlink:href="img/sprite.svg#arrow1"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="block-bannner__pagination pagination"></div>
+            </div>
+
             <div class="block-products">
                 <div class="container">
                     <h2 class="title2">
@@ -470,10 +538,10 @@
                                         <img loading="lazy" src="img/image16.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>2 900</span>
@@ -488,7 +556,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -502,10 +570,10 @@
                                         <img loading="lazy" src="img/image17.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>2 900</span>
@@ -520,7 +588,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -534,10 +602,10 @@
                                         <img loading="lazy" src="img/image18.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>2 900</span>
@@ -552,7 +620,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -566,10 +634,10 @@
                                         <img loading="lazy" src="img/image19.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>2 900</span>
@@ -584,7 +652,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -598,10 +666,10 @@
                                         <img loading="lazy" src="img/image16.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>2 900</span>
@@ -616,7 +684,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -630,10 +698,10 @@
                                         <img loading="lazy" src="img/image17.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>2 900</span>
@@ -648,7 +716,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -662,10 +730,10 @@
                                         <img loading="lazy" src="img/image18.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>2 900</span>
@@ -680,7 +748,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <div class="block-products__slide swiper-slide">
@@ -694,10 +762,10 @@
                                         <img loading="lazy" src="img/image19.webp" alt="">
                                     </a>
                                 </div>
-                                <a href="./" class="product-card__item">
-                                    <div class="product-card__title">
+                                <div class="product-card__item">
+                                    <a href="./" class="product-card__title">
                                         Футболка из хлопка
-                                    </div>
+                                    </a>
                                     <div class="product-card__prices">
                                         <div class="product-card__price">
                                             <span>2 900</span>
@@ -712,7 +780,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -731,6 +799,8 @@
                     </div>
                 </div>
             </div>
+
+            {% include 'blocks/cookies.njk' %}
 
         </main>
         {% include 'blocks/footer.njk' %}
