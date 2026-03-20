@@ -1,0 +1,110 @@
+.footer {
+    .container {
+        @media (max-width: 992px) {
+            padding: 0px 0px 0px 0px;
+        }
+    }
+}
+
+.footer-top {
+    padding: 55px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    @media (max-width: 992px) {
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding: 0px 0px 0px 0px;
+    }
+    .contacts {
+        flex: 0 0 361px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        @media (max-width: 992px) {
+            padding: 30px 20px;
+            flex: 1 1 auto;
+            border-top: 1px solid #cfbba0;
+            border-bottom: 1px solid #cfbba0;
+        }
+        .contacts__top {
+            flex: 1 1 auto;
+            @media (max-width: 992px) {
+                margin: 0px 0px 5px 0px;
+            }
+        }
+        .contacts__contact {
+            display: none;
+            @media (max-width: 992px) {
+                display: flex;
+            }
+        }
+    }
+    // .footer-top__menu
+
+    &__menu {
+        flex: 1 1 auto;
+        display: flex;
+        gap: 35px 10px;
+        @media (max-width: 992px) {
+            padding: 30px 20px 40px 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // .footer-top__column
+
+    &__column {
+        flex: 0 1 288px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            li {
+                a {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 120%;
+                    font-variant: small-caps;
+                    transition: opacity 0.3s;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+
+    // .footer-top__title
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 167%;
+        text-transform: uppercase;
+    }
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(207, 187, 160, 0.5);
+    padding: 0px 0px 36px 0px;
+    @media (max-width: 992px) {
+        border-top: none;
+        padding: 0px 20px 15px 20px;
+    }
+    p {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 167%;
+        color: #584438;
+        text-align: right;
+    }
+}
