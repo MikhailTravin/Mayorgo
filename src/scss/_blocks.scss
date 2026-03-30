@@ -1,10 +1,8 @@
 .block-bannner {
     position: relative;
-    &.block-bannner1 {
-        margin: 0px 0px 15px 0px;
-        @media (max-width: 768px) {
-            margin: 0px 0px 0px 0px;
-        }
+    margin: 0px 0px 15px 0px;
+    @media (max-width: 768px) {
+        margin: 0px 0px 0px 0px;
     }
     // .block-bannner__slider
 
@@ -66,7 +64,14 @@
 
     &__slider {
         overflow: visible;
-        padding: 0px 20px;
+        padding: 0px 20px 0px 19px;
+        min-width: 0;
+        width: calc(100% + 40px);
+        clip-path: polygon(0 0, 100vw 0, 100vw 100%, 0 100%);
+        margin: 0px -20px;
+        @media (max-width: 1320px) {
+            clip-path: none;
+        }
     }
 
     // .block-products__wrapper
@@ -90,6 +95,10 @@
     // .block-products__arrow-prev
 
     &__arrow-prev {
+        left: 5px;
+        @media (max-width: 1320px) {
+            left: 30px;
+        }
     }
 
     // .block-products__arrow-next
