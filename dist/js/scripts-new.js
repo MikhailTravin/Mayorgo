@@ -194,12 +194,14 @@ document.querySelectorAll('.block-products').forEach((block, index) => {
   const nextArrow = block.querySelector('.block-products__arrow-next');
 
   if (prevArrow && nextArrow) {
+    const isDisabled = slider1.classList.contains('swiper-disabled');
+
     new Swiper(slider1, {
       observer: true,
       observeParents: true,
       slidesPerView: 'auto',
       spaceBetween: 15,
-      loop: true,
+      loop: !isDisabled, 
       lazy: true,
       speed: 800,
       navigation: {
