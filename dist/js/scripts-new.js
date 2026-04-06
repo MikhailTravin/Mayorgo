@@ -201,7 +201,7 @@ document.querySelectorAll('.block-products').forEach((block, index) => {
       observeParents: true,
       slidesPerView: 'auto',
       spaceBetween: 15,
-      loop: !isDisabled, 
+      loop: !isDisabled,
       lazy: true,
       speed: 800,
       navigation: {
@@ -219,6 +219,9 @@ document.querySelectorAll('.block-bannner').forEach((block, index) => {
   const slider2 = block.querySelector('.block-bannner__slider');
   if (!slider2) return;
 
+  const slides = slider2.querySelectorAll('.block-bannner__slide'); 
+  const slidesCount = slides.length;
+
   const pagination = block.querySelector('.block-bannner__pagination');
   const prevArrow = block.querySelector('.block-bannner__arrow-prev');
   const nextArrow = block.querySelector('.block-bannner__arrow-next');
@@ -228,7 +231,7 @@ document.querySelectorAll('.block-bannner').forEach((block, index) => {
     observeParents: true,
     slidesPerView: 1,
     spaceBetween: 0,
-    loop: true,
+    loop: slidesCount >= 2,
     lazy: true,
     speed: 800,
     effect: "fade",
