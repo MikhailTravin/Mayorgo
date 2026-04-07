@@ -24,5 +24,8 @@
   margin: 0 auto;
   width: 100%;
   max-width: var(--container-width);
-  padding: 0px 20px;
+  padding: 0px 55px;
+  @media (max-width: 1320px) {
+    padding: 0px 20px;
+  }
 }

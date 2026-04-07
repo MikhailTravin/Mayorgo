@@ -1,18 +1,17 @@
 .arrows {
     position: absolute;
-    left: 50%;
+    left: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0px, -50%);
     z-index: 30;
     padding: 0px 0px 0px 0px;
-    max-width: 1280px;
-    margin: 0 auto;
+    max-width: 100%;
     width: 100%;
 }
 .arrow-prev {
     cursor: pointer;
     position: absolute;
-    left: 0px;
+    left: 55px;
     top: 50%;
     transform: translate(0px, -50%);
     z-index: 30;
@@ -30,7 +29,7 @@
 .arrow-next {
     cursor: pointer;
     position: absolute;
-    right: 0px;
+    right: 55px;
     top: 50%;
     transform: translate(0px, -50%);
     z-index: 30;

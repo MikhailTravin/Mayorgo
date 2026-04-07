@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --container-width: 1320px;
+  --container-width: 100%;
   --container-padding: 40px;
   --theme-color-accent: #2f1808;
   --font-family: "AvenirNext", sans-serif;
@@ -147,7 +147,12 @@ a {
   margin: 0 auto;
   width: 100%;
   max-width: var(--container-width);
-  padding: 0px 20px;
+  padding: 0px 55px;
+}
+@media (max-width: 1320px) {
+  .container {
+    padding: 0px 20px;
+  }
 }
 
 [data-simplebar] {
@@ -571,21 +576,20 @@ a {
 
 .arrows {
   position: absolute;
-  left: 50%;
+  left: 0;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
   z-index: 30;
   padding: 0px 0px 0px 0px;
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 100%;
   width: 100%;
 }
 
 .arrow-prev {
   cursor: pointer;
   position: absolute;
-  left: 0px;
+  left: 55px;
   top: 50%;
   -webkit-transform: translate(0px, -50%);
           transform: translate(0px, -50%);
@@ -610,7 +614,7 @@ a {
 .arrow-next {
   cursor: pointer;
   position: absolute;
-  right: 0px;
+  right: 55px;
   top: 50%;
   -webkit-transform: translate(0px, -50%);
           transform: translate(0px, -50%);
@@ -1404,6 +1408,10 @@ a {
     margin: 0px 0px 0px 0px;
   }
 }
+.block-bannner__slider video {
+  width: 100%;
+  height: 100%;
+}
 .block-bannner__slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1462,15 +1470,18 @@ a {
 }
 .block-products__slider {
   overflow: visible;
-  padding: 0px 20px 0px 19px;
   min-width: 0;
-  width: calc(100% + 40px);
   clip-path: polygon(0 0, 100vw 0, 100vw 100%, 0 100%);
-  margin: 0px -20px;
+  margin: 0px -55px 0px -55px;
+  padding: 0px 55px 0px 55px;
+  width: calc(100% + 110px);
 }
 @media (max-width: 1320px) {
   .block-products__slider {
     clip-path: none;
+    margin: 0px -20px;
+    width: calc(100% + 40px);
+    padding: 0px 20px 0px 19px;
   }
 }
 .block-products__slide {
@@ -1492,13 +1503,22 @@ a {
   }
 }
 .block-products__arrow-prev {
-  left: 5px;
+  left: 65px;
 }
 @media (max-width: 1320px) {
   .block-products__arrow-prev {
     left: 30px;
   }
 }
+.block-products__arrow-next {
+  right: 30px;
+}
+@media (max-width: 1320px) {
+  .block-products__arrow-next {
+    right: 30px;
+  }
+}
+
 .block-catalog {
   margin: 40px 0px 30px 0px;
 }
